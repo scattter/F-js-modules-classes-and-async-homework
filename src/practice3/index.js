@@ -4,7 +4,7 @@ export function getPoetry() {
             if (response.ok) {
                 return Promise.resolve(response.json())
             }
-            return Promise.reject(new Error(fail))
+            return Promise.reject(new Error("fail"))
         })
         .then((data) => {
             var result = []
